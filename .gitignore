@@ -1,6 +1,5 @@
 .DS_store
 .idea
-static/videos/
 static/images/favicon.svg
 static/images/interpolate_end.jpg
 static/images/interpolate_start.jpg
