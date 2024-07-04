@@ -41,8 +41,7 @@
   <script src="./static/js/index.js"></script>
 </head>
 <body>
-
-
+  
 
 <section class="hero">
   <div class="hero-body">
@@ -127,13 +126,13 @@
   </div>
 </section>
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
+<section class="hero teaser">
+  <div class="container">
+    <div class="hero-body">
       <div class="columns">
         <!-- Video (Larger on the left side) -->
         <div class="column is-two-thirds">
-          <video poster="" id="MotionCanvas" autoplay controls muted loop playsinline width="100%">
+          <video poster="" id="MotionCanvas" autoplay controls muted loop playsinline width="130%" height="130%">
             <source src="./static/videos/MotionCanvas.mp4" type="video/mp4">
           </video>
         </div>
@@ -141,26 +140,77 @@
         <div class="column is-one-third" style="padding: 50;">
           <!-- Video (Top right) -->
           <div class="content" style="margin-bottom: 0px;">
-            <video poster="" id="MotionCapture" autoplay controls muted loop playsinline width="100%">
+            <video poster="" id="MotionCapture" autoplay controls muted loop playsinline width="100%" height="130%">
               <source src="./static/videos/MotionCapture.mp4" type="video/mp4">
             </video>
           </div>
           <!-- Video (Bottom right) -->
           <div class="content" style="margin-top: 0px;">
-            <video poster="" id="canvas" autoplay controls muted loop playsinline width="100%">
+            <video poster="" id="canvas" autoplay controls muted loop playsinline width="100%" height="130%">
               <source src="./static/videos/CanvasDrawing.webm" type="video/webm">
             </video>
           </div>
         </div>
       </div>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">MotionCanvas</span> translates simple user movements into fine-styled artworks, such as flower paintings, allowing users to have engaging real-time art creation experiences. 
+        The canvas features a line color flowing effect to enhance appearance and reduce perceptive processing time.
+        MotionCanvas also supports co-creation among multiple users within the same space. 
+        enhancing the interactive experience, forstering community environment, further encouraging the collaborative engagement in artistic creation.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered">
+        <!-- Video (Larger on the top) -->
+        <div class="column is-full">
+          <video poster="" id="MotionCanvas" autoplay controls muted loop playsinline style="width: 100%; height: auto;">
+            <source src="./static/videos/MotionCanvas.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="columns is-centered" style="margin-top: 10px;">
+        <div class="column is-full" style="display: flex; padding: 0;">
+          <!-- Video (Left bottom) -->
+          <div class="content" style="flex: 1; padding: 10px;">
+            <video poster="" id="MotionCapture" autoplay controls muted loop playsinline style="width: 100%; height: 100%;">
+              <source src="./static/videos/MotionCapture.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- Video (Right bottom) -->
+          <div class="content" style="flex: 1; padding: 10px;">
+            <video poster="" id="canvas" autoplay controls muted loop playsinline style="width: 100%; height: 100%;">
+              <source src="./static/videos/CanvasDrawing.webm" type="video/webm">
+            </video>
+          </div>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered" style="margin-top: 10px;">
+        <span class="dnerf">MotionCanvas</span> translates simple user movements into fine-styled artworks, such as flower paintings, allowing users to have engaging real-time art creation experiences. 
+        The canvas features a line color flowing effect to enhance appearance and reduce perceptive processing time.
+        MotionCanvas also supports co-creation among multiple users within the same space, 
+        enhancing the interactive experience, fostering a community environment, and encouraging collaborative engagement in artistic creation.
+      </h2>
     </div>
   </div>
 </section>
 
 
-<section class="section">
+
+
+
+
+
+<!-- <section class="hero is-light is-small">
+</section> -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
@@ -184,7 +234,10 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+  </div>
+</section>
+<!-- End paper abstract -->
+
 
     
     <!-- line to flower. -->
@@ -192,7 +245,7 @@
       <div class="container">
         <h2 class="title is-3">Line-to-Flower</h2>
         <figure class="image is-16by9">
-          <img src="static/images/line2flowr1.gif" alt="Line-to-Flower" style="height: 300px; object-fit: contain;">
+          <img src="static/images/line2flower1.gif" alt="Line-to-Flower" style="height: 300px; object-fit: contain;">
         </figure>
       </div>
     </div>    
