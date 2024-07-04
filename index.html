@@ -127,22 +127,6 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section>
-
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
@@ -156,7 +140,7 @@
         <!-- Column for vertically aligned videos -->
         <div class="column is-one-third" style="padding: 50;">
           <!-- Video (Top right) -->
-          <div class="content" style="margin-bottom: 6px;">
+          <div class="content" style="margin-bottom: 0px;">
             <video poster="" id="MotionCapture" autoplay controls muted loop playsinline width="100%">
               <source src="./static/videos/MotionCapture.mp4" type="video/mp4">
             </video>
@@ -164,7 +148,11 @@
           <!-- Video (Bottom right) -->
           <div class="content" style="margin-top: 0px;">
             <video poster="" id="canvas" autoplay controls muted loop playsinline width="100%">
+<<<<<<< Updated upstream
               <source src="./static/videos/output.mp4" type="video/mp4">
+=======
+              <source src="./static/videos/Screencast.webm" type="video/webm">
+>>>>>>> Stashed changes
             </video>
           </div>
         </div>
@@ -182,48 +170,58 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            We introduce MotionCanvas, a spatial art creation tool that integrates Generative AI 
+            and motion capture technologies into artistic interactive experiences.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            Existing interactive platforms provide engaging environments and allow users to interact 
+            through touch or gestures. However, they are often limited by predefined interactive 
+            content and gestures, lacking the ability to respond to user movements comprehensively.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            We combine Generative AI models with motion capture technology to create novel forms 
+            of interactive art, with three primary objectives: 1) ensuring that the generated content 
+            aligns with the intended aesthetic, 2) advancing the possibilities for creative collaboration, 
+            and 3) minimizing latency within the interaction pipeline. The results of the user study 
+            confirm that our system can enhance user engagement and provides dynamic and immersive experiences.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
+    
+
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
+        <h2 class="title is-3">Line-to-Flower</h2>
+        <figure class="image is-16by9">
+          <img src="static/images/1_AmI9wRbXrfIWGESx6eEiTw.gif" alt="Line-to-Flower">
+        </figure>
       </div>
     </div>
     <!--/ Paper video. -->
+
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
+          <div class="item item-motioncanvas">
+            <img class="carousel-image" src="static/images/image.png" alt="MotionCanvas Image">
+          </div>
+          <div class="item item-impression1">
+            <img class="carousel-image" src="static/images/image.png" alt="Artistic Impression 1">
+          </div>
+          <div class="item item-impression2">
+            <img class="carousel-image" src="static/images/image.png" alt="Artistic Impression 2">
+          </div>
+          <div class="item item-impression3">
+            <img class="carousel-image" src="static/images/image.png" alt="Artistic Impression 3">
+          </div>
+        </div>
+      </div>
+    </div>
+     
   </div>
 </section>
 
