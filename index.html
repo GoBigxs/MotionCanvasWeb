@@ -262,25 +262,27 @@
       <div class="columns is-vcentered">
         <!-- Left side image -->
         <div class="column is-half">
-          <img src="static/images/task1.png" alt="Left Image" style="width: 95%; height: auto;">
-          <h2 class="subtitle has-text-centered">
-            Reference image for users. 
-          </h2>
+          <div class="image-container">
+            <img src="static/images/task1-rb.png" alt="Left Image" class="responsive-image">
+            <h2 class="subtitle has-text-centered">
+              Reference image for users.
+            </h2>
+          </div>
         </div>
         <!-- Right side carousel -->
         <div class="column is-half">
           <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
             <div class="item item-impression1">
-              <img src="static/images/task1.png" alt="Artistic Impression 1" style="width: 100%; height: auto;">
+              <img src="static/images/task1-1.png" alt="Artistic Impression 1" style="width: 100%; height: auto;">
             </div>
             <div class="item item-impression2">
-              <img src="static/images/task1results.png" alt="Artistic Impression 2" style="width: 100%; height: auto;">
+              <img src="static/images/task1-2.png" alt="Artistic Impression 2" style="width: 100%; height: auto;">
             </div>
             <div class="item item-impression3">
-              <img src="static/images/task2.png" alt="Artistic Impression 3" style="width: 100%; height: auto;">
+              <img src="static/images/task1-3.png" alt="Artistic Impression 3" style="width: 100%; height: auto;">
             </div>
             <div class="item item-impression3">
-              <img src="static/images/task2results.png" alt="Artistic Impression 4" style="width: 100%; height: auto;">
+              <img src="static/images/task1-4.png" alt="Artistic Impression 4" style="width: 100%; height: auto;">
             </div>
           </div>
           <h2 class="subtitle has-text-centered">
@@ -294,19 +296,27 @@
       <div class="columns is-vcentered">
         <!-- Left side image -->
         <div class="column is-half">
-          <img src="static/images/task2.png" alt="Left Image" style="width: 95%; height: auto;">
-          <h2 class="subtitle has-text-centered">
-            Reference image for users. 
-          </h2>
+          <div class="image-container">
+            <img src="static/images/task2-rb.png" alt="Left Image" class="responsive-image">
+            <h2 class="subtitle has-text-centered">
+              Reference image for users.
+            </h2>
+          </div>
         </div>
         <!-- Right side carousel -->
         <div class="column is-half">
           <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
             <div class="item item-impression3">
-              <img src="static/images/task2.png" alt="Artistic Impression 3" style="width: 100%; height: auto;">
+              <img src="static/images/task2-1.png" alt="Artistic Impression 3" style="width: 100%; height: auto;">
             </div>
             <div class="item item-impression3">
-              <img src="static/images/task2results.png" alt="Artistic Impression 4" style="width: 100%; height: auto;">
+              <img src="static/images/task2-2.png" alt="Artistic Impression 4" style="width: 100%; height: auto;">
+            </div>
+            <div class="item item-impression3">
+              <img src="static/images/task2-3.png" alt="Artistic Impression 3" style="width: 100%; height: auto;">
+            </div>
+            <div class="item item-impression3">
+              <img src="static/images/task2-4.png" alt="Artistic Impression 4" style="width: 100%; height: auto;">
             </div>
           </div>
           <h2 class="subtitle has-text-centered">
@@ -319,187 +329,87 @@
 </section>
 <!--End User Drawings -->
 
-
-    <!--/ System Workflow. -->
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">System Workflow Overview</h2>
-        <div class="workflow-section">
-          <div class="workflow-image">
-            <img src="static/images/Sec4_system_overview.png" alt="System Workflow Image">
-          </div>
-          <p class="workflow-description">This image illustrates the step-by-step process of the system workflow, showing how data moves from input to output.</p>
+<section class="section hero is-small">
+  <!--/ System Workflow. -->
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">System Workflow Overview</h2>
+      <div class="workflow-section">
+        <div class="workflow-image">
+          <img src="static/images/Sec4_system_overview.png" alt="System Workflow Image">
         </div>
+        <p class="workflow-description"> Initially, users engage with the system, initiating the sequence. 
+          Subsequently, the motion capture system records and transmits their movements, channeling raw data 
+          to MQTT topic one for processing. A Python program then undertakes the meticulous processing of 
+          data from topic one, subsequently disseminating refined information to MQTT topic two. The Unity 
+          program seamlessly integrates the processed data from topic two, facilitating the transformation of 
+          intricate 3D motion data into simplified 2D drawing inputs. These drawing inputs are subsequently 
+          forwarded to the Image Generation API, where a systematic server process generates elaborate flower 
+          images based on the provided data. Finally, the images are displayed on the screen.</p>
       </div>
     </div>
-    <!--/ System Workflow. -->
-
-    <!--/ Flower Generation. -->
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Flower Generation Pipeline</h2>
-        <div class="workflow-section">
-          <div class="workflow-image">
-            <img src="static/images/FlowerGeneration.png" alt="Flower Generation Image">
-          </div>
-          <p class="workflow-description">This image illustrates the step-by-step process of the system workflow, showing how data moves from input to output.</p>
-        </div>
-      </div>
-    </div>
-    <!--/ Flower Generation. -->
-
-    
-    
-
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
   </div>
+  <!--/ System Workflow. -->
 </section>
 
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
+<section class="section hero is-light">
+  <!--/ Flower Generation. -->
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Flower Generation Pipeline</h2>
+      <div class="workflow-section">
+        <div class="workflow-image">
+          <img src="static/images/FlowerGeneration.png" alt="Flower Generation Image">
+        </div>
+        <p class="workflow-description">The flower generation pipeline begins with the reception of point data from Unity, 
+          followed by a line processing that smooths lines and incorporates geometric shapes to enhance the base input image. 
+          Subsequently, the processed image undergoes conversion into a depth image using a Depth estimation model. Together 
+          with textual inputs, this depth-enhanced image is fed into the image generation module, crafted with selected components 
+          and fine-tuned parameters refined through iterative trials to optimize performance. The final step involves 
+          employing the BiRefNet background removal model to enhance visual clarity by eliminating background colors 
+          from the generated images.</p>
+      </div>
+    </div>
   </div>
+  <!--/ Flower Generation. -->
+
+</section>
+
+<section class="section hero is-small">
+  <!--/ Acknowledgements. -->
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Acknowledgements</h2>
+      <div class="Acknowledgements">
+        <p class="Acknowledgements-description"> We would like to express our sincere gratitude to our supervisor, Günter, for his invaluable guidance, support, and advice throughout this thesis. His insights and encouragement were instrumental in the successful completion of this thesis.<br><br>
+          
+          We also extend our heartfelt thanks to Sangxia for his help and constructive feedback in every stage of the thesis, from the idea exploration to implementation to user tests, which significantly contributed to the development of our work. Our appreciation also goes to the Sony Vision and AI Systems team for their comprehensive support. Special thanks go to Andrej, for his assistance and leadership, which were crucial to our progress. We are also grateful to our colleagues Sven, Leonardo, Nithin, Jonas and John-Henry, whose companionship during fika and enjoyment of semla provided much-needed moments of relaxation and happiness, helping us to release stress and maintain a positive outlook throughout this journey.<br><br>
+          
+          Lastly, we are immensely grateful to our friends and parents for their unwavering support, understanding, and encouragement throughout this endeavor. Their belief in us and their continuous encouragement have been invaluable.<br><br>
+          
+          This journey has truly been both pleasant and rewarding. Having the opportunity to learn, explore, and create within a field that deeply fascinates us has been a privilege. Being surrounded by talented individuals who were always ready to offer their assistance and insights, has been a true blessing. As this chapter comes to a close, the knowledge, experiences and memories we have gained will undoubtedly leave a lasting impact on our future endeavors, shaping our next steps in profound ways. Thank you all for being an invaluable part of our journey!</p>
+      </div>
+    </div>
+  </div>
+  <!--/ Acknowledgements. -->
+</section>
+
+<section class="section hero is-light">
+  <!--/ Acknowledgements. -->
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">BibTeX</h2>
+      <pre><code>@misc{9165380,
+        abstract     = {{We introduce MotionCanvas, a spatial art creation tool that integrates Generative AI and motion capture technologies into artistic interactive experiences. Existing interactive platforms provide engaging environments and allow users to interact through touch or gestures. However, they are often limited by predefined interactive content and gestures, lacking the ability to respond to user movements comprehensively. We combine Generative AI models with motion capture technology to create novel forms of interactive art, with three primary objectives: 1) ensuring that the generated content aligns with the intended aesthetic, 2) advancing the possibilities for creative collaboration, and 3) minimizing latency within the interaction pipeline. The results of the user study confirm that our system can enhance user engagement and provides dynamic and immersive experiences.}},
+        author       = {{Xu, Shuai and Shu, Qinxin}},
+        language     = {{eng}},
+        note         = {{Student Paper}},
+        title        = {{MotionCanvas: Generative Motion-Driven Interactive Art Experience}},
+        year         = {{2024}},
+      }</code></pre>
+    </div>
+  </div>
+  <!--/ Acknowledgements. -->
 </section>
 
 
