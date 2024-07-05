@@ -126,13 +126,14 @@
   </div>
 </section>
 
+<!-- Teaser video-->
 <section class="hero teaser">
   <div class="container">
     <div class="hero-body">
       <div class="columns">
         <!-- Video (Larger on the left side) -->
-        <div class="column is-two-thirds">
-          <video poster="" id="MotionCanvas" autoplay controls muted loop playsinline width="130%" height="130%">
+        <div class="column is-two-thirds" style="margin-right: 0px;">
+          <video poster="" id="MotionCanvas" autoplay controls muted loop playsinline width="130%" height="100%">
             <source src="./static/videos/MotionCanvas.mp4" type="video/mp4">
           </video>
         </div>
@@ -140,18 +141,37 @@
         <div class="column is-one-third" style="padding: 50;">
           <!-- Video (Top right) -->
           <div class="content" style="margin-bottom: 0px;">
-            <video poster="" id="MotionCapture" autoplay controls muted loop playsinline width="100%" height="130%">
-              <source src="./static/videos/MotionCapture.mp4" type="video/mp4">
+            <video poster="" id="MotionCapture" autoplay controls muted loop playsinline width="100%" height="100%">
+              <source src="./static/videos/MotionCapture-resize2.mp4" type="video/mp4">
             </video>
           </div>
           <!-- Video (Bottom right) -->
           <div class="content" style="margin-top: 0px;">
-            <video poster="" id="canvas" autoplay controls muted loop playsinline width="100%" height="130%">
-              <source src="./static/videos/CanvasDrawing.webm" type="video/webm">
+            <video poster="" id="canvas" autoplay controls muted loop playsinline width="100%" height="100%">
+              <source src="./static/videos/CanvasDrawing-resize2.mp4" type="video/mp4">
             </video>
           </div>
         </div>
       </div>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">MotionCanvas</span> translates simple user movements into fine-styled artworks, such as flower paintings, allowing users to have engaging real-time art creation experiences. 
+        The canvas features a line color flowing effect to enhance appearance and reduce perceptive processing time.
+        <i>MotionCanvas</i> also supports co-creation among multiple users within the same space. 
+        enhancing the interactive experience, forstering community environment, further encouraging the collaborative engagement in artistic creation.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/demo-videos-LR.mp4" type="video/mp4">
+      </video>
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">MotionCanvas</span> translates simple user movements into fine-styled artworks, such as flower paintings, allowing users to have engaging real-time art creation experiences. 
         The canvas features a line color flowing effect to enhance appearance and reduce perceptive processing time.
@@ -161,52 +181,9 @@
     </div>
   </div>
 </section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="columns is-centered">
-        <!-- Video (Larger on the top) -->
-        <div class="column is-full">
-          <video poster="" id="MotionCanvas" autoplay controls muted loop playsinline style="width: 100%; height: auto;">
-            <source src="./static/videos/MotionCanvas.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div class="columns is-centered" style="margin-top: 10px;">
-        <div class="column is-full" style="display: flex; padding: 0;">
-          <!-- Video (Left bottom) -->
-          <div class="content" style="flex: 1; padding: 10px;">
-            <video poster="" id="MotionCapture" autoplay controls muted loop playsinline style="width: 100%; height: 100%;">
-              <source src="./static/videos/MotionCapture.mp4" type="video/mp4">
-            </video>
-          </div>
-          <!-- Video (Right bottom) -->
-          <div class="content" style="flex: 1; padding: 10px;">
-            <video poster="" id="canvas" autoplay controls muted loop playsinline style="width: 100%; height: 100%;">
-              <source src="./static/videos/CanvasDrawing.webm" type="video/webm">
-            </video>
-          </div>
-        </div>
-      </div>
-      <h2 class="subtitle has-text-centered" style="margin-top: 10px;">
-        <span class="dnerf">MotionCanvas</span> translates simple user movements into fine-styled artworks, such as flower paintings, allowing users to have engaging real-time art creation experiences. 
-        The canvas features a line color flowing effect to enhance appearance and reduce perceptive processing time.
-        MotionCanvas also supports co-creation among multiple users within the same space, 
-        enhancing the interactive experience, fostering a community environment, and encouraging collaborative engagement in artistic creation.
-      </h2>
-    </div>
-  </div>
-</section>
+ --><!-- End teaser video -->
 
 
-
-
-
-
-
-<!-- <section class="hero is-light is-small">
-</section> -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -214,7 +191,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
+        <div class="content has-text-justified large-text">
           <p>
             We introduce MotionCanvas, a spatial art creation tool that integrates Generative AI 
             and motion capture technologies into artistic interactive experiences.
@@ -240,65 +217,113 @@
 
 
     
-    <!-- line to flower. -->
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Line-to-Flower</h2>
-        <figure class="image is-16by9">
-          <img src="static/images/line2flower1.gif" alt="Line-to-Flower" style="height: 300px; object-fit: contain;">
-        </figure>
-      </div>
-    </div>    
-    <!--/ line to flower. -->
-
-    <!--/ line to flower results. -->
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
-          <div class="item item-motioncanvas">
-            <img src="static/images/image.png" alt="MotionCanvas Image">
-          </div>
-          <div class="item item-impression1">
-            <img src="static/images/image.png" alt="Artistic Impression 1">
-          </div>
-          <div class="item item-impression2">
-            <img src="static/images/image.png" alt="Artistic Impression 2">
-          </div>
-          <div class="item item-impression3">
-            <img src="static/images/image.png" alt="Artistic Impression 3">
-          </div>
+<!-- Line to Flower -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-normal">
+      <h2 class="title is-3">Line to Flower</h2>
+      <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
+        <div class="item item-f1">
+          <img id="f1" src="./static/images/line2flower1.gif" alt="f1" style="width: 100%; height: 100%;">
+        </div>
+        <div class="item item-f2">
+          <img id="f2" src="./static/images/line2flower2.gif" alt="f2" style="width: 100%; height: 100%;">
+        </div>
+        <div class="item item-f4">
+          <img id="f4" src="./static/images/line2flower4.gif" alt="f4" style="width: 100%; height: 100%;">
+        </div>
+        <div class="item item-f5">
+          <img id="f5" src="./static/images/line2flower5.gif" alt="f5" style="width: 100%; height: 100%;">
+        </div>
+        <div class="item item-f6">
+          <img id="f6" src="./static/images/line2flower6.gif" alt="f6" style="width: 100%; height: 100%;">
+        </div>
+        <div class="item item-f7">
+          <img id="f7" src="./static/images/line2flower7.gif" alt="f7" style="width: 100%; height: 100%;">
+        </div>
+        <div class="item item-f8">
+          <img id="f8" src="./static/images/line2flower8.gif" alt="f8" style="width: 100%; height: 100%;">
         </div>
       </div>
     </div>
-    <!--/ line to flower results. -->
+  </div>
+</section>
+<!-- End Line to Flower -->
 
-    <!--/ User Drawings. -->
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">User Drawings</h2>
-        <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
-          <div class="item item-impression1">
-            <img src="static/images/task1.png" alt="Artistic Impression 1">
+
+
+<!-- User Drawings -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">User Drawings</h2>
+
+      <h3 class="title is-4">Free-Form Drawing</h3>
+      <div class="columns is-vcentered">
+        <!-- Left side image -->
+        <div class="column is-half">
+          <img src="static/images/task1.png" alt="Left Image" style="width: 95%; height: auto;">
+          <h2 class="subtitle has-text-centered">
+            Reference image for users. 
+          </h2>
+        </div>
+        <!-- Right side carousel -->
+        <div class="column is-half">
+          <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
+            <div class="item item-impression1">
+              <img src="static/images/task1.png" alt="Artistic Impression 1" style="width: 100%; height: auto;">
+            </div>
+            <div class="item item-impression2">
+              <img src="static/images/task1results.png" alt="Artistic Impression 2" style="width: 100%; height: auto;">
+            </div>
+            <div class="item item-impression3">
+              <img src="static/images/task2.png" alt="Artistic Impression 3" style="width: 100%; height: auto;">
+            </div>
+            <div class="item item-impression3">
+              <img src="static/images/task2results.png" alt="Artistic Impression 4" style="width: 100%; height: auto;">
+            </div>
           </div>
-          <div class="item item-impression2">
-            <img src="static/images/task1results.png" alt="Artistic Impression 2">
+          <h2 class="subtitle has-text-centered">
+            Drawing results. 
+          </h2>
           </div>
-          <div class="item item-impression3">
-            <img src="static/images/task2.png" alt="Artistic Impression 3">
+      </div>
+
+      <br/>
+      <h3 class="title is-4">Structured Drawing</h3>
+      <div class="columns is-vcentered">
+        <!-- Left side image -->
+        <div class="column is-half">
+          <img src="static/images/task2.png" alt="Left Image" style="width: 95%; height: auto;">
+          <h2 class="subtitle has-text-centered">
+            Reference image for users. 
+          </h2>
+        </div>
+        <!-- Right side carousel -->
+        <div class="column is-half">
+          <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
+            <div class="item item-impression3">
+              <img src="static/images/task2.png" alt="Artistic Impression 3" style="width: 100%; height: auto;">
+            </div>
+            <div class="item item-impression3">
+              <img src="static/images/task2results.png" alt="Artistic Impression 4" style="width: 100%; height: auto;">
+            </div>
           </div>
-          <div class="item item-impression3">
-            <img src="static/images/task2results.png" alt="Artistic Impression 4">
-          </div>
+          <h2 class="subtitle has-text-centered">
+            Drawing results. 
+          </h2>
         </div>
       </div>
     </div>
-    <!--/ User Drawings. -->
+  </div>
+</section>
+<!--End User Drawings -->
 
 
     <!--/ System Workflow. -->
     <div class="hero-body">
       <div class="container">
-        <h2 class="title is-3">System Workflow</h2>
+        <h2 class="title is-3">System Workflow Overview</h2>
         <div class="workflow-section">
           <div class="workflow-image">
             <img src="static/images/Sec4_system_overview.png" alt="System Workflow Image">
@@ -312,7 +337,7 @@
     <!--/ Flower Generation. -->
     <div class="hero-body">
       <div class="container">
-        <h2 class="title is-3">Flower Generation</h2>
+        <h2 class="title is-3">Flower Generation Pipeline</h2>
         <div class="workflow-section">
           <div class="workflow-image">
             <img src="static/images/FlowerGeneration.png" alt="Flower Generation Image">
@@ -325,8 +350,7 @@
 
     
     
-  </div>
-</section>
+
 
 
 <section class="section">
