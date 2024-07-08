@@ -1,5 +1,4 @@
-# Nerfies
-
+# MotinoCanvas
 This is the repository that contains source code for the [MotionCanvas Website](https://krysxin.github.io/MotionCanvas/).
 
 
