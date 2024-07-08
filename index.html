@@ -194,7 +194,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-normal">
-      <h2 class="title is-3">Line to Flower</h2>
+      <h2 class="title is-3">(Motion to) Line to Flower</h2>
       <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
         <div class="item item-f1">
           <img id="f1" src="./static/images/line2flower1.gif" alt="f1" style="width: 100%; height: 100%;">
@@ -311,14 +311,13 @@
         <div class="workflow-image">
           <img src="static/images/Sec4_system_overview.png" alt="System Workflow Image">
         </div>
-        <p class="workflow-description"> Initially, users engage with the system, initiating the sequence. 
+        <p class="workflow-description"> Users engage with the system, initiating the motion sequence. 
           Subsequently, the motion capture system records and transmits their movements, channeling raw data 
-          to MQTT topic one for processing. A Python program then undertakes the processing of 
-          data from topic one, subsequently disseminating refined information to MQTT topic two. The Unity 
-          program seamlessly integrates the processed data from topic two, facilitating the transformation of 
-          intricate 3D motion data into simplified 2D drawing inputs. These drawing inputs are subsequently 
-          forwarded to the Image Generation API, where a systematic server process generates elaborate flower 
-          images based on the provided data. Finally, the images are displayed on the screen.</p>
+          to MQTT topic one for processing. A Python program then does the base processing of the 
+          data from topic one, and publishes refined information to MQTT topic two. The Unity 
+          program then integrates the processed data from topic two, transforming 3D motion data into simplified 2D drawing inputs. 
+          These drawing inputs are subsequently forwarded to the Image Generation API, where a systematic server is built to generate elaborate flower 
+          images based on the provided data. Finally, the image data is sent back to the Unity program, and images are displayed on the screen.</p>
       </div>
     </div>
   </div>
@@ -334,13 +333,12 @@
         <div class="workflow-image">
           <img src="static/images/FlowerGeneration.png" alt="Flower Generation Image">
         </div>
-        <p class="workflow-description">The flower generation pipeline begins with the reception of point data from Unity, 
+        <p class="workflow-description">The flower generation pipeline first receives point data from Unity, 
           followed by a line processing that smooths lines and incorporates geometric shapes to enhance the base input image. 
-          Subsequently, the processed image undergoes conversion into a depth image using a Depth estimation model. Together 
-          with textual inputs, this depth-enhanced image is fed into the image generation module, crafted with selected components 
-          and fine-tuned parameters refined through iterative trials to optimize performance. The final step involves 
-          employing the BiRefNet background removal model to enhance visual clarity by eliminating background colors 
-          from the generated images.</p>
+          Subsequently, the processed image is converted into a depth image using a Depth estimation model. Then, together 
+          with textual prompts, this depth image is fed into the fine-tuned image generation module. The final step involves 
+          employing the BiRefNet model to enhance visual clarity by eliminating background colors from the generated images.<br>
+          The whole generation process takes about 1 second with one single NVIDIA GeForce GTX 4090 (24GB) GPU.</p>
       </div>
     </div>
   </div>
@@ -354,13 +352,9 @@
     <div class="container">
       <h2 class="title is-3">Acknowledgements</h2>
       <div class="Acknowledgements">
-        <p class="Acknowledgements-description"> We would like to express our sincere gratitude to our supervisor, Günter, for his invaluable guidance, support, and advice throughout this thesis. His insights and encouragement were instrumental in the successful completion of this thesis.<br><br>
-          
-          We also extend our heartfelt thanks to Sangxia for his help and constructive feedback in every stage of the thesis, from the idea exploration to implementation to user tests, which significantly contributed to the development of our work. Our appreciation also goes to the Sony Vision and AI Systems team for their comprehensive support. Special thanks go to Andrej, for his assistance and leadership, which were crucial to our progress. We are also grateful to our colleagues Sven, Leonardo, Nithin, Jonas and John-Henry, whose companionship during fika and enjoyment of semla provided much-needed moments of relaxation and happiness, helping us to release stress and maintain a positive outlook throughout this journey.<br><br>
-          
-          Lastly, we are immensely grateful to our friends and parents for their unwavering support, understanding, and encouragement throughout this endeavor. Their belief in us and their continuous encouragement have been invaluable.<br><br>
-          
-          This journey has truly been both pleasant and rewarding. Having the opportunity to learn, explore, and create within a field that deeply fascinates us has been a privilege. Being surrounded by talented individuals who were always ready to offer their assistance and insights, has been a true blessing. As this chapter comes to a close, the knowledge, experiences and memories we have gained will undoubtedly leave a lasting impact on our future endeavors, shaping our next steps in profound ways. Thank you all for being an invaluable part of our journey!</p>
+        <p class="Acknowledgements-description"> 
+          We express our deep gratitude to our supervisors, Sangxia Huang and Günter Alce, 
+          for their invaluable guidance, support, and advice throughout this thesis. Their insights and encouragement were crucial in the successful completion of this work.
       </div>
     </div>
   </div>
@@ -388,15 +382,6 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
@@ -406,11 +391,9 @@
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            This page was built based on the <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>  project page. You are free to borrow the source code of this website, we just ask that you link back to this page in the footer.
+
           </p>
         </div>
       </div>
