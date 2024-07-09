@@ -156,7 +156,7 @@ body {
 }
 
 .responsive-image {
-  width: 100%;
+  width: 85%;
   height: auto;
 }
 
@@ -166,16 +166,5 @@ body {
 
 
 
-.carousel .item {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-.carousel-container {
-  margin: 0; /* Remove margin around carousel */
-}
 
 
