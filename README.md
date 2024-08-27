@@ -1,5 +1,5 @@
 # MotinoCanvas
-This is the repository that contains source code for the [MotionCanvas Website](https://GoBigxs.github.io/MotionCanvas/).
+This is the repository that contains source code for the [MotionCanvas Website](https://gobigxs.github.io/MotionCanvas/).
 
 
 # Website License
